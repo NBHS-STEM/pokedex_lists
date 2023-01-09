@@ -16,5 +16,5 @@ Today we'll be using the `.split()` method in order to process strings like thes
 
 **1/09/23**:
 
-Today we'll write a function called `get_pokemon_by_name()` that takes a string as input and returns the list corresponding to the pokemon with that name. If the pokemon is not found, the function should return `None`
+Today we'll write a function called `get_pokemon_by_name()` that takes a string as an argument and returns the list corresponding to the pokemon with that name. If the pokemon is not found, the function should return `None`. 
 

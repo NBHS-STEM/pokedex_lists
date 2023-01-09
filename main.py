@@ -7,4 +7,6 @@ def browse_pokemon():
             break
         else:
             print(pokemon)
-        
+
+def get_pokemon_by_name(pokemon):
+    pass
