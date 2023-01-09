@@ -14,4 +14,7 @@ And how do we capture *just* that value?
 
 Today we'll be using the `.split()` method in order to process strings like these in order to make individual values accessible via index. Our goal today is to write a function that allows us to enter a Pokemon's name and retrieve its HP. We'll call this function `get_HP_by_name()`.
 
-*Update: hi*
+**1/09/23**:
+
+Today we'll write a function called `get_pokemon_by_name()` that takes a string as input and returns the list corresponding to the pokemon with that name. If the pokemon is not found, the function should return `None`
+
