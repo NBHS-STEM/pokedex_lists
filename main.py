@@ -9,4 +9,8 @@ def browse_pokemon():
             print(pokemon)
 
 def get_pokemon_by_name(pokemon):
-    pass
+    for entry in pokedex[1:]:
+        if entry[1] == pokemon:
+            return entry
+    # explicit is better than implicit!
+    return None
