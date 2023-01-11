@@ -14,3 +14,12 @@ def get_pokemon_by_name(pokemon):
             return entry
     # explicit is better than implicit!
     return None
+
+def is_legendary(pokemon):
+    pass
+
+def hp_greater_than(threshold):
+    pass
+
+def has_type(pokemon_type):
+    pass
