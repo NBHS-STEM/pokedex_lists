@@ -21,5 +21,5 @@ Today we'll write a function called `get_pokemon_by_name()` that takes a string 
 **1/11/23**:
 Today we plan on completing three functions:
 - `is_legendary()`: a function that takes a Pokémon name as an argument and returns `True` if the Pokémon is legendary, and `False` otherwise. We'll deal with the case where the input isn't a valid Pokémon later.
-- `hp_greater_than()`: a function that returns a list of all Pokémon with HP (strictly) greater than the number passed as an argument. For example, `hp_greater_than(60)` should return a list names for all Pokémon with HP *greater than* 60. It should **not** return any Pokémon with exactly 60 HP.
+- `hp_greater_than()`: a function that returns a list of all Pokémon with HP (strictly) greater than the number passed as an argument. For example, `hp_greater_than(60)` should return a list of names for all Pokémon with HP *greater than* 60. It should **not** return any Pokémon with exactly 60 HP.
 - `has_type()`: a function that returns a list of all Pokémon names of a given type. For example, `has_type("Ghost")` should return a list of the names of every Ghost type Pokémon.

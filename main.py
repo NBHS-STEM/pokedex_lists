@@ -15,11 +15,32 @@ def get_pokemon_by_name(pokemon):
     # explicit is better than implicit!
     return None
 
+def get_HP_by_name(pokemon):
+    return get_pokemon_by_name(pokemon)[5]
+    
 def is_legendary(pokemon):
-    pass
+    return get_pokemon_by_name(pokemon)[-1] == "True"
 
 def hp_greater_than(threshold):
-    pass
+    """
+    Alternate version without listcomp:
+
+    results = []
+    for entry in pokedex[1:]:
+        if int(entry[5]) > threshold:
+            results.append(entry[1])
+    return results
+    """
+    return [entry[1] for entry in pokedex[1:] if int(entry[5]) > threshold]
 
 def has_type(pokemon_type):
-    pass
+    """
+    Alternate version without listcomp:
+
+    results = []
+    for entry in pokedex[1:]:
+        if pokemon_type in entry[2:4]:
+            results.append(entry[1])
+    return results
+    """
+    return [entry[1] for entry in pokedex[1:] if pokemon_type in entry[2:4]]
