@@ -8,16 +8,16 @@ def browse_pokemon():
     pass
 
 def get_pokemon_by_name(pokemon):
-    pass
+    return pokedex.get(pokemon)
 
 def get_HP_by_name(pokemon):
-    pass
+    return int(pokedex.get(pokemon)["HP"])
     
 def is_legendary(pokemon):
-    pass
+    return pokedex.get(pokemon)["Legendary"] == "True"
 
 def hp_greater_than(threshold):
-    pass
+    return [pokemon for pokemon in pokedex if get_HP_by_name(pokemon) > threshold]
 
 def has_type(pokemon_type):
-    pass
+    return [name for name in pokedex if pokemon_type in [pokedex[name]["Type 1"], pokedex[name]["Type 2"]]]
